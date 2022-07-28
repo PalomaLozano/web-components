@@ -1,0 +1,79 @@
+body {
+  background: linear-gradient(rgb(196, 255, 240), rgb(6, 126, 96));
+}
+.header {
+  height: 45px;
+}
+.containerLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgb(20, 223, 162), rgb(12, 150, 138));
+}
+
+.logoImage {
+  height: 25px;
+  padding: 10px;
+}
+
+.menu {
+  padding-top: 13px;
+  padding-right: 15px;
+  color: aliceblue;
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+}
+
+.animationAd {
+  height: 20px;
+  background-color: aliceblue;
+  white-space: nowrap
+}
+
+.animationLetter {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  padding: 2px;
+  color: rgb(6, 126, 96);
+  background-repeat: repeat;
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -moz-animation: my-animation 3s linear infinite;
+  -webkit-animation: my-animation 13s linear infinite;
+  animation: my-animation 30s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
